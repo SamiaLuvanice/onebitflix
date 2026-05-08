@@ -1,12 +1,11 @@
 const { prototype } = require("node:events");
-const { hostname } = require("node:os");
 
 module.exports = {
     development: {
         dialect: 'postgres',
-        host: hostname(),
+        host: 'localhost',
         port: 5433,
-        database: 'onebitflix_development',
+        database: 'onebitflix',
         username: 'onebitflix',
         password: 'onebitflix',
     }
