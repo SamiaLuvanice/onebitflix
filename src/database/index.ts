@@ -8,6 +8,6 @@ export const sequelize = new Sequelize({
     username: 'onebitflix',
     password: 'onebitflix',
     define: {
-        underscored: true,
+        underscored: true, // Use snake_case for column names
     },
 });
