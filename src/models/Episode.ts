@@ -17,8 +17,7 @@ export interface EpisodeCreationAttributes
 export interface EpisodeInstance
     extends Model<Episode, EpisodeCreationAttributes>, Episode { }
 
-export const Episode = sequelize.define<EpisodeInstance, Episode>(
-    'episodes',
+export const Episode = sequelize.define<EpisodeInstance, Episode>('Episodes',
     {
         id: {
             type: DataTypes.INTEGER,
@@ -35,7 +34,6 @@ export const Episode = sequelize.define<EpisodeInstance, Episode>(
         },
         order: {
             allowNull: false,
-            unique: true,
             type: DataTypes.STRING,
         },
         videoUrl: {

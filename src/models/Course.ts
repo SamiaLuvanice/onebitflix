@@ -50,4 +50,3 @@ export const Course = sequelize.define<CourseInstance, Course>("Course", {
     }
 })
 
-    
